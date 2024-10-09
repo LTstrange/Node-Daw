@@ -3,8 +3,7 @@ import { ReactFlow, Background, MiniMap, Controls, Panel } from "@xyflow/react";
 import { shallow } from "zustand/shallow";
 
 import { useStore, type StoreState } from "./store";
-import Osc from "./nodes/Osc";
-import Amp from "./nodes/Amp";
+import Oscillator from "./nodes/Oscillator";
 import Out from "./nodes/Out";
 
 const selector = (store: StoreState) => ({
@@ -18,8 +17,7 @@ const selector = (store: StoreState) => ({
 });
 
 const nodeTypes = {
-  osc: Osc,
-  amp: Amp,
+  osc: Oscillator,
   out: Out,
 };
 
